@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Layout</title>
+  <style>
+    /* Container styling */
+    .container {
+      width: 400px;                 /* Specific width */
+      padding: 20px;                /* Some padding */
+      border: 3px solid #333;       /* Border */
+      border-radius: 15px;          /* Rounded corners */
+      text-align: center;           /* Center blocks horizontally */
+      margin: 50px auto;            /* Center container on page */
+    }
+
+    /* Common block styling */
+    .red, .green, .yellow {
+      width: 80px;                  /* Specific size */
+      height: 80px;
+      display: inline-block;        /* Inline inside container */
+      border-radius: 50%;           /* Make them circles */
+      margin: 10px;                 /* Space between blocks */
+    }
+
+    /* Individual colors */
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="container">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+  </div>
 </body>
-
 </html>
